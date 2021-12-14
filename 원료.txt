@@ -1,0 +1,6 @@
+부원료 및 합금철(kg)
+생석회, 경소, 가탄제, SiMn, FeSi, 가탄분, 알믹스
+화학성분
+C, Si, Mn, P, S, Cu, Sn
+슬라그 성분비율
+SiO2, Al2O3, T/Fe, CaO, MgO, P2O5, S, 염기도
