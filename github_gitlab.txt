@@ -1,13 +1,16 @@
 GitHub 설정정보 
 url :
 https://github.com/KANGAROO7007/viking2021
-github ID:
+github ID :
 KANGAROO7007
-repository name :
+repository name : 
 viking2021
+name : 
 강인호
 email :
 fusionoff@naver.com
+Repository default branch :
+master
 
 GitLab 설정정보 
 url : 
