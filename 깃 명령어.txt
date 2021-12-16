@@ -13,7 +13,7 @@ $git checkout develop
 $git checkout master
 
 * 브랜치 병합하기
-$git merge <커밋 이름>
+$git merge <커밋이름>
 예) develop 브랜치의 변경사항을 master 브랜치에 병합
 $git checkout master
 $git merge develop 
