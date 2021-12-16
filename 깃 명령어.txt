@@ -1,0 +1,19 @@
+* 브랜치를 사용하기 전에 이 브랜치를 사용하겠다고 명시적으로 지정하기
+$git checkout <브랜치이름>    
+예)
+$git checkout develop
+$git checkout master
+
+* 브랜치 병합하기
+$git merge <커밋 이름>
+예) develop 브랜치의 변경사항을 master 브랜치에 병합
+$git checkout master
+$git merge develop 
+
+* 브랜치 삭제하기
+$git branch -d <브랜치이름>
+예)
+$git branch -d develop
+
+
+
