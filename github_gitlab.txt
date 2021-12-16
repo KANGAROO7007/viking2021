@@ -1,0 +1,26 @@
+GitHub 설정정보 
+url :
+https://github.com/KANGAROO7007/viking2021
+github ID :
+KANGAROO7007
+repository name : 
+viking2021
+name : 
+강인호
+email :
+fusionoff@naver.com
+Repository default branch :
+master
+
+GitLab 설정정보 
+url : 
+https://gitlab.com/hyundai-steel/egov.git
+full name :
+철강형강시스템팀/강인호
+email :
+kangaroo7007@gmail.com
+path & username
+https://gitlab.com/kangaroo7007
+
+https://git-scm.com/
+book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EC%88%98%EC%A0%95%ED%95%98%EA%B3%A0-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0
