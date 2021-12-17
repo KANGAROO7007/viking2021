@@ -9,5 +9,3 @@ $* 특정 커밋의 내용을 되돌리는 커밋
 $git log --oneline
 $git revert <커밋아이디>
 * 바로 직전 커밋을 되돌리는 커밋
-$git branch
-$git revert HEAD
