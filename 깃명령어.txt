@@ -97,10 +97,11 @@ $git restore <파일명>
 * 특정 커밋의 내용을 되돌리는 커밋
 $git log --oneline
 $git revert <커밋아이디>
+-> $git push origin develop
 
 * 바로 직전 커밋을 되돌리는 커밋
 $git revert HEAD
-
+-> $git push origin develop
 
 
 
