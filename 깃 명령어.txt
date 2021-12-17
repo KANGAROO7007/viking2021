@@ -93,6 +93,15 @@ $git clean -fd --dry-run
 * 삭제될 파일 미리 확인하기
 $git clean -n(--dry-run)
 
+* stage에 올린파일 stage에서 내리기
+$git restore --staged <파일명>
+[$git reset HEAD]
+
+* stage에 올리지 않았으나 수정한 파일 수정전으로 돌아가기
+$git restore <파일명>
+[$git checkout <파일명>]
+
+
 
 
 
