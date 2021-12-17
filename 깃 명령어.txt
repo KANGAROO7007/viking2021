@@ -67,16 +67,19 @@ $git add .
 $git commit -m "Fixed untracked files"
 $git push origin master
 
-* 최근 커밋된 버전으로 파일 되돌리기
+* 최근 커밋된 버전으로 파일 되돌리기 *****************************************
 (unstaged 상태의 파일을 수정했을 때 수정하지 않은 원래의 상태로 되돌릴 때)
 $git checkout <파일명>
 
 * 파일 상태를 unstaged로 변경하기
 $git reset HEAD <파일명>
 
-* 특정 커밋이 내용을 되돌리는 커밋
+* 특정 커밋의 내용을 되돌리는 커밋
 $git log --oneline
 $git revert <커밋아이디>
+
+* 바로 직전 커밋을 되돌리는 커밋
+$git revert HEAD
 
 * untracked 파일 모두 지우기
 $git clean -f
