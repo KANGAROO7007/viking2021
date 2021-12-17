@@ -1,0 +1,7 @@
+$git branch
+$git checkout develop
+$git remote
+$git config --list
+$git push origin develop
+$git config --global user.name "현대제철(인천)/강인호"
+$git config --global user.email "fuionoff@naver.ccom"
