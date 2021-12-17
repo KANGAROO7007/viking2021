@@ -74,13 +74,6 @@ $git checkout <파일명>
 * 파일 상태를 unstaged로 변경하기
 $git reset HEAD <파일명>
 
-* 특정 커밋의 내용을 되돌리는 커밋
-$git log --oneline
-$git revert <커밋아이디>
-
-* 바로 직전 커밋을 되돌리는 커밋
-$git revert HEAD
-
 * untracked 파일 모두 지우기
 $git clean -f
 
@@ -101,6 +94,12 @@ $git restore --staged <파일명>
 $git restore <파일명>
 [$git checkout <파일명>]
 
+* 특정 커밋의 내용을 되돌리는 커밋
+$git log --oneline
+$git revert <커밋아이디>
+
+* 바로 직전 커밋을 되돌리는 커밋
+$git revert HEAD
 
 
 
