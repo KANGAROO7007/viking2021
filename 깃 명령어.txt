@@ -32,10 +32,46 @@ $git push origin develop
 $git push -f <원격저장소명> <브랜치명>
 $git push -f origin develop
 
-*모든 로컬브랜치를 원격저장소에 전송한다
+* 모든 로컬브랜치를 원격저장소에 전송한다
 $git push origin -all
 
-*원격저장소의 변경사항을 로컬로 받아온다
+* 원격저장소의 변경사항을 로컬로 받아온다
 $git pull origin develop
+
+* 원격저장소와 로컬 저장소에 있는 파일을 삭제한다
+$git rm <파일명>
+
+$git commit -m "remove file"
+$git push origin master
+
+* 로컬저장소에 있는 파일은 삭제하지 않고 원격저장소에 있는 파일만 삭제한다
+$git rm --cached <파일명>
+
+$git commit -m "remove file"
+$git push origin master
+
+* 개인관리 파일들이 원격저장소에 올라가지 않도록한다.
+.gitignore 설정하기
+
+* .gitignore 나타내기
+$touch .gitignore
+
+* 현재 repository의 cache를 모두 삭제한다
+$git rm -r --cached .
+
+* 로컬저장소에 있는 파일은 삭제하지 않고 원격저장소에 있는 파일을 삭제한다
+$git rm -r --cached <파일명>
+
+* .gitignore에 넣은 파일 목록들을 제외하고 다른 모든 파일들을 다시 track하도록 설
+$git add .
+$git commit -m "Fixed untracked files"
+$git push origin master
+
+
+
+
+
+
+
 
 
