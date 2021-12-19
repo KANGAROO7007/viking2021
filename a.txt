@@ -1,0 +1,18 @@
+$git clone https://
+$git config --list
+$git remote
+$git init
+$git remote add origin https://
+$git remote
+$git status
+$git status -s
+$git add .
+$git add test.txt
+$git commit -m 'text.txt 커밋'
+$git push origin develop
+$git pull origin develop
+$git git revert HEAD
+$git restore --cached test.txt
+$git reste HEAD
+$git restore test.txt
+$git checkout test.txt
