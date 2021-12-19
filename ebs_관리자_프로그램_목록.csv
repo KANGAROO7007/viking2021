@@ -1,0 +1,54 @@
+﻿대분류,중분류,소분류,URL,JSP,TABLE
+사용자관리,사용자정보관리,사용자 목록,/uss/umt/user/EgovUserManage.do,/src/main/webapp/WEB-INF/jsp/cmm/uss/umt/EgovUserManage.jsp,EMPLYRINFO
+,,사용자 등록,/uss/umt/user/EgovUserInsertView.do,/src/main/webapp/WEB-INF/jsp/cmm/uss/umt/EgovUserInsert.jsp,EMPLYRINFO
+,,사용자 수정,/uss/umt/user/EgovUserSelectUpdtView.do,/src/main/webapp/WEB-INF/jsp/cmm/uss/umt/EgovUserSelectUpdt.jsp,EMPLYRINFO
+,,암호변경,/uss/umt/user/EgovUserPasswordUpdtView.do,/src/main/webapp/WEB-INF/jsp/cmm/uss/umt/EgovUserPasswordUpdt.jsp,EMPLYRINFO
+,,아이디중복확인,/uss/umt/cmm/EgovIdDplctCnfirmView.do,/src/main/webapp/WEB-INF/jsp/cmm/uss/umt/EgovIdDplctCnfirm.jsp,EMPLYRINFO
+,,우편번호찾기,/sym/cmm/EgovCcmZipSearchPopup.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/zip/EgovCcmZipSearchPopup.jsp,ZIP
+,사용자부재관리,사용자부재 목록,/uss/ion/uas/selectUserAbsnceList.do,/src/main/webapp/WEB-INF/jsp/uss/ion/uas/EgovUserAbsnceList.jsp,"EMPLYRINFO
+USERABSNCE"
+,,사용자부재 수정,/uss/ion/uas/getUserAbsnce.do,/src/main/webapp/WEB-INF/jsp/uss/ion/uas/EgovUserAbsnceRegist.jsp,USERABSNCE
+,,사용자부재 등록,/uss/ion/uas/addViewUserAbsnce.do,/src/main/webapp/WEB-INF/jsp/uss/ion/uas/EgovUserAbsnceUpdt.jsp,USERABSNCE
+사용자권한관리,권한관리,권한 목록,/sec/ram/EgovAuthorList.do,/src/main/webapp/WEB-INF/jsp/sec/ram/EgovAuthorManage.jsp,AUTHORINFO
+,,권한 등록,/sec/ram/EgovAuthorInsertView.do,/src/main/webapp/WEB-INF/jsp/sec/ram/EgovAuthorInsert.jsp,AUTHORINFO
+,,권한 수정,/sec/ram/EgovAuthorUpdate.do,/src/main/webapp/WEB-INF/jsp/sec/ram/EgovAuthorUpdate.jsp,AUTHORINFO
+,,권한롤목록,/sec/ram/EgovAuthorRoleList.do,/src/main/webapp/WEB-INF/jsp/sec/ram/EgovAuthorRoleManage.jsp,"AUTHORINFO
+AUTHORROLERELATE"
+,사용자그룹관리,사용자그룹 목록,/sec/gmt/EgovGroupList.do,/src/main/webapp/WEB-INF/jsp/sec/gmt/EgovGroupManage.jsp,AUTHORGROUPINFO
+,,사용자그룹 등록,/sec/gmt/EgovGroupInsertView.do,/src/main/webapp/WEB-INF/jsp/sec/gmt/EgovGroupInsert.jsp,AUTHORGROUPINFO
+,,사용자그룹 수정,/sec/gmt/EgovGroup.do,/src/main/webapp/WEB-INF/jsp/sec/gmt/EgovGroupUpdate.jsp,AUTHORGROUPINFO
+,사용자별권한관리,사용자별권한 목록,/sec/rgm/EgovAuthorGroupList.do,/src/main/webapp/WEB-INF/jsp/sec/rgm/EgovAuthorGroupManage.jsp,"EMPLYRINFO
+EMPLYRSCRTYESTBS"
+,롤관리,롤 목록,/sec/rmt/EgovRoleList.do,/src/main/webapp/WEB-INF/jsp/sec/rmt/EgovRoleManage.jsp,ROLEINFO
+,,롤 등록,/sec/rmt/EgovRoleInsertView.do,/src/main/webapp/WEB-INF/jsp/sec/rmt/EgovRoleInsert.jsp,ROLEINFO
+,,롤 수정,/sec/rmt/EgovRole.do,/src/main/webapp/WEB-INF/jsp/sec/rmt/EgovRoleUpdate.jsp,ROLEINFO
+메뉴관리,프로그램정보관리,프로그램정보 목록,/sym/prm/EgovProgramListManageSelect.do,/src/main/webapp/WEB-INF/jsp/sym/prm/EgovProgramListManage.jsp,PROGRMLIST
+,,프로그램정보 등록,/sym/prm/EgovProgramListRegist.do,/src/main/webapp/WEB-INF/jsp/sym/prm/EgovProgramListRegist.jsp,PROGRMLIST
+,,프로그램정보 수정,/sym/prm/EgovProgramListDetailSelectUpdt.do,/src/main/webapp/WEB-INF/jsp/sym/prm/EgovProgramListDetailSelectUpdt.jsp,PROGRMLIST
+,권한별메뉴관리,권한별메뉴 목록,/sym/mnu/mcm/EgovMenuCreatManageSelect.do,/src/main/webapp/WEB-INF/jsp/sym/mnu/mcm/EgovMenuCreatManage.jsp,"AUTHORINFO
+MENUCREATDTLS"
+,,권한별메뉴 생성,/sym/mnu/mcm/EgovMenuCreatSelect.do,/src/main/webapp/WEB-INF/jsp/sym/mnu/mcm/EgovMenuCreat.jsp,"AUTHORINFO
+MENUCREATDTLS"
+,메뉴정보관리,메뉴정보 목록,/sym/mnu/mpm/EgovMenuManageSelect.do,/src/main/webapp/WEB-INF/jsp/sym/mnu/mpm/EgovMenuManage.jsp,MENUINFO
+,,메뉴정보 등록,/sym/mnu/mpm/EgovMenuRegistInsert.do,/src/main/webapp/WEB-INF/jsp/sym/mnu/mpm/EgovMenuRegist.jsp,MENUINFO
+,,메뉴정보 수정,/sym/mnu/mpm/EgovMenuManageListDetailSelect.do,/src/main/webapp/WEB-INF/jsp/sym/mnu/mpm/EgovMenuDetailSelectUpdt.jsp,MENUINFO
+,,메뉴일괄등록,/sym/mnu/mpm/EgovMenuBndeRegist.do,/src/main/webapp/WEB-INF/jsp/sym/mnu/mpm/EgovMenuBndeRegist.jsp,MENUINFO
+코드관리,공통분류코드관리,공통분류코드 목록,/sym/ccm/ccc/EgovCcmCmmnClCodeList.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/ccm/EgovCcmCmmnClCodeList.jsp,CMMNCLCODE
+,,공통분류코드 등록,/sym/ccm/ccc/EgovCcmCmmnClCodeRegist.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/ccm/EgovCcmCmmnClCodeRegist.jsp,CMMNCLCODE
+,,공통분류코드 수정,/sym/ccm/ccc/EgovCcmCmmnClCodeModify.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/ccm/EgovCcmCmmnClCodeModify.jsp,CMMNCLCODE
+,,공통분류코드 상세조회,/sym/ccm/ccc/EgovCcmCmmnClCodeDetail.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/ccm/EgovCcmCmmnClCodeDetail.jsp,CMMNCLCODE
+,공통코드관리,공통코드 목록,/sym/ccm/cca/EgovCcmCmmnCodeList.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/ccm/EgovCcmCmmnCodeList.jsp,"CMMNCODE
+CMMNCLCODE"
+,,공통코드 등록,/sym/ccm/cca/EgovCcmCmmnCodeRegist.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/ccm/EgovCcmCmmnCodeRegist.jsp,CMMNCODE
+,,공통코드 수정,/sym/ccm/cca/EgovCcmCmmnCodeModify.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/ccm/EgovCcmCmmnCodeModify.jsp,CMMNCODE
+,,공통코드 상세조회,/sym/ccm/cca/EgovCcmCmmnCodeDetail.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/ccm/EgovCcmCmmnCodeDetail.jsp,CMMNCODE
+,상세코드관리,상세코드 목록,/sym/ccm/cde/EgovCcmCmmnDetailCodeList.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/ccm/EgovCcmCmmnDetailCodeList.jsp,"CMMNDETAILCODE
+CMMNCODE"
+,,상세코드 등록,/sym/ccm/cde/EgovCcmCmmnDetailCodeRegist.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/ccm/EgovCcmCmmnDetailCodeRegist.jsp,CMMNDETAILCODE
+,,상세코드 수정,/sym/ccm/cde/EgovCcmCmmnDetailCodeModify.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/ccm/EgovCcmCmmnDetailCodeModify.jsp,CMMNDETAILCODE
+,,상세코드 상세조회,/sym/ccm/cde/EgovCcmCmmnDetailCodeDetail.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/ccm/EgovCcmCmmnDetailCodeDetail.jsp,CMMNDETAILCODE
+,우편번호관리,우편번호 목록,/sym/ccm/zip/EgovCcmZipList.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/zip/EgovCcmZipList.jsp,ZIP
+,,우편번호 등록,/sym/ccm/zip/EgovCcmZipRegist.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/zip/EgovCcmZipRegist.jsp,ZIP
+,,우편번호 수정,/sym/ccm/zip/EgovCcmZipModify.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/zip/EgovCcmZipModify.jsp,ZIP
+,,우편번호 상세조회,/sym/ccm/zip/EgovCcmZipDetail.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/zip/EgovCcmZipDetail.jsp,ZIP
+,,우편번호 엑셀파일등록,/sym/ccm/zip/EgovCcmExcelZipRegist.do,/src/main/webapp/WEB-INF/jsp/cmm/sym/zip/EgovCcmExcelZipRegist.jsp,ZIP
