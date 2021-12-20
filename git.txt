@@ -161,16 +161,19 @@ $git restore test.txt
 $git checkout test.txt
 
 * 최신 커밋들 보기
-$git log --oneline -n 3
+$git log --oneline -n 10
 
 * 커밋 변경사항을 패치파일로 저장
 $git format-patch -1 <커밋아이디>
 
-* 패치파일을 적용하여 되돌리기
+* 패치파일을 적용하여 특정 커밋 되돌리기
 $git apply -R <패치파일명>
+$rm <패치파일명>
+$git add .
+$git commit -m 'Revert 커밋아이디'
 
-*되돌려진 것을 다시 이전 상태로 되돌리기
-$git reset <커밋아이디>
+*되돌려진 커밋을 다시 이전 커밋 상태로 되돌리기
+$git reset --hard <커밋아이디>
 
-* 이전 상태로 돌아간 것 다시 되돌리기
+* 이전 상태로 돌아간 것 커밋 다시 커밋전 상태로 되돌리기
 $git revert <커밋아이디> --no-edit
