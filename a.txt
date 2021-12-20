@@ -1,18 +1,21 @@
-$git clone https://
-$git config --list
-$git remote
-$git init
-$git remote add origin https://
-$git remote
 $git status
 $git status -s
+$git config --list
+$git config --system ore.longpaths true
+
+$git clone https://
+$git init
+$git remote
+$git remote add origin https://
+
 $git add .
 $git add test.txt
 $git commit -m 'text.txt 커밋'
 $git push origin develop
 $git pull origin develop
-$git git revert HEAD
+$git revert HEAD
+
 $git restore --cached test.txt
-$git reste HEAD
+$git reset HEAD
 $git restore test.txt
 $git checkout test.txt
