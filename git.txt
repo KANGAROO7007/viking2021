@@ -146,7 +146,7 @@ $git push origin develop
 $git pull origin develop
 
 * 커밋한 파일을 취소한다
-$git revert HEAD
+$git revert HEAD --no-edit
 
 * stage에 올린 파일을 stage에서 내린다.
 $git restore --cached test.txt
@@ -173,4 +173,4 @@ $git apply -R <패치파일명>
 $git reset <커밋아이디>
 
 * 이전 상태로 돌아간 것 다시 되돌리기
-$git revert <커밋아이디>
+$git revert <커밋아이디> --no-edit
