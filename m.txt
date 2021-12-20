@@ -1,1 +1,2 @@
 git revert HEAD
+git reset --hard <커밋아이디>
