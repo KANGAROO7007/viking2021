@@ -1,1 +1,10 @@
 git revert HEAD
+git revert HEAD
+git revert HEAD
+git revert HEAD
+git revert HEAD
+git revert HEAD
+git revert HEAD
+git revert HEAD
+git revert HEAD
+git revert HEAD
