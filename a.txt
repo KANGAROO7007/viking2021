@@ -16,6 +16,6 @@ $git pull origin develop
 $git revert HEAD
 
 $git restore --cached test.txt
-$git reste HEAD
+$git reset HEAD
 $git restore test.txt
 $git checkout test.txt
