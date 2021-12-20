@@ -116,7 +116,7 @@ $git config --global user.name "현대제철(인천)/강인호"
 $git config --global user.email "kih7898@partners-steel.com"
 
 * 파일이름 길이 제한을 해제한다.
-$git config --system ore.longpaths true
+$git config --system core.longpaths true
 
 * remote master를 로컬로 복사해 온다
 $git clone https://
