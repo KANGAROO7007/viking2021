@@ -139,10 +139,10 @@ $git add test.txt
 * 커멘트와 함께 커밋한다
 $git commit -m 'test.txt 커밋'
 
-* 커밋한 파일들을 리모트에 올린다.
+* 커밋한 파일들을 원격(remote)에 올린다.
 $git push origin develop
 
-* 리모트에 있는 파일들을 가져온다.
+* 원격(remote)에 있는 파일들을 가져온다.
 $git pull origin develop
 
 * 커밋한 파일을 취소한다
