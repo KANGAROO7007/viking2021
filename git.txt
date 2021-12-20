@@ -160,4 +160,17 @@ $git restore test.txt
 * stage에 있지 않은 파일을 수정하기 전으로 돌린다.
 $git checkout test.txt
 
+* 최신 커밋들 보기
+$git log --oneline -n 3
 
+* 커밋 변경사항을 패치파일로 저장
+$git format-patch -1 <커밋아이디>
+
+* 패치파일을 적용하여 되돌리기
+$git apply -R <패치파일명>
+
+*되돌려진 것을 다시 이전 상태로 되돌리기
+$git reset <커밋아이디>
+
+* 이전 상태로 돌아간 것 다시 되돌리기
+$git revert <커밋아이디>
