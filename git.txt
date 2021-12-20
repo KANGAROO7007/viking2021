@@ -145,7 +145,7 @@ $git push origin develop
 * 원격(remote)에 있는 파일들을 가져온다.
 $git pull origin develop
 
-* 커밋한 파일을 취소한다 *******************************************************
+* 커밋한 파일을 취소한다 ****************************
 $git revert HEAD --no-edit
 
 * stage에 올린 파일을 stage에서 내린다.
