@@ -179,3 +179,9 @@ $git reset --hard <커밋아이디>
 * 이전 상태로 돌아간 것 커밋 다시 커밋전 상태로 되돌리기
 (커밋한 것을 취소하고 원상태를 회복하라)
 $git revert <커밋아이디> --no-edit
+
+* HEAD, index, working directory
+working directory : 작업공간. staging area에 등록되기 전의 원초적 공간이다.
+index : staging area 혹은 cache 라고 부른다.
+         커밋할 재료를 저장하는 공간이다.
+HEAD : 마지막 커밋을 가리킨다.
