@@ -1,1 +1,3 @@
-git revert HEAD
+git revert HEAD --no-edit
+git reset --hard <커밋아이디>
+git revert <커밋아이디> --no-edit
