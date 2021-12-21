@@ -99,7 +99,7 @@ $git log --oneline
 $git revert <커밋아이디>
 -> $git push origin develop
 
-* 바로 직전 커밋을 되돌리는 커밋 (커밋한 것을 취소하고 원상태를 회복하라)
+* 바로 직전 커밋을 되돌리는 커밋
 $git revert HEAD
 -> $git push origin develop
 
@@ -145,7 +145,7 @@ $git push origin develop
 * 원격(remote)에 있는 파일들을 가져온다.
 $git pull origin develop
 
-* 커밋한 파일을 취소한다 ********************************************************
+* 커밋한 파일을 취소한다 ****************************
 $git revert HEAD --no-edit
 
 * stage에 올린 파일을 stage에서 내린다.
@@ -173,34 +173,7 @@ $git add .
 $git commit -m 'Revert 커밋아이디'
 
 *되돌려진 커밋을 다시 이전 커밋 상태로 되돌리기
-(커밋 상태로 무조건 복귀하라)
 $git reset --hard <커밋아이디>
 
 * 이전 상태로 돌아간 것 커밋 다시 커밋전 상태로 되돌리기
-(커밋한 것을 취소하고 원상태를 회복하라)
 $git revert <커밋아이디> --no-edit
-
-* HEAD, index, working directory
-working directory : 작업공간. staging area에 등록되기 전의 원초적 공간이다.
-index : staging area 혹은 cache 라고 부른다.
-         커밋할 재료를 저장하는 공간이다.
-HEAD : 마지막 커밋을 가리킨다.
-
-* git push 취소하기***************************************************************
-
-1.워킹 디렉토리에서 commit 되돌린다.
-1.1.가장 최근의 commit을 취소 (기본옵션: --mixed)
-$git reset HEAD^
-
-1.2.원하는 시점으로 워킹 디렉토리를 되돌린다.
-$git reflog 또는 $git log -g (브랜치와 HEAD가 가리켰던 커밋 목록 확인)
-$git reset HEAD@{number} 또는 $git reset <커밋아이디>
-
-2.되돌려진 상태에서 다시 commit을 한다.
-$git commit -m "write commit message"
-
-3.원격저장소에 강제로 push 한다.
-$git push origin <브랜치명> -f
-or
-$git push origin +<브랜치명>
-
