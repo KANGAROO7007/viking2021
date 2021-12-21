@@ -99,7 +99,7 @@ $git log --oneline
 $git revert <커밋아이디>
 -> $git push origin develop
 
-* 바로 직전 커밋을 되돌리는 커밋
+* 바로 직전 커밋을 되돌리는 커밋 (커밋한 것을 취소하고 원상태를 회복하라)
 $git revert HEAD
 -> $git push origin develop
 
@@ -173,7 +173,9 @@ $git add .
 $git commit -m 'Revert 커밋아이디'
 
 *되돌려진 커밋을 다시 이전 커밋 상태로 되돌리기
+(커밋 상태로 무조건 복귀하라)
 $git reset --hard <커밋아이디>
 
 * 이전 상태로 돌아간 것 커밋 다시 커밋전 상태로 되돌리기
+(커밋한 것을 취소하고 원상태를 회복하라)
 $git revert <커밋아이디> --no-edit
