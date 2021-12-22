@@ -196,11 +196,11 @@ $git reset HEAD^
 $git reflog 또는 $git log -g
 $git reset HEAD@{number} 또는 $git reset <커밋아이디>
 
-2.되돌려진 상태에서 다시 commit을 한다.
-$git commit -m "write commit message"
+#2.되돌려진 상태에서 다시 commit을 한다.
+#$git commit -m "write commit message"
 
 3.원격저장소에 강제로 push 한다.
-$git push origin <브랜치명> -f
+$git push <원격저장소> <브랜치명> -f
 or
-$git push origin +<브랜치명>
+$git push <원격저장소> +<브랜치명>
 
