@@ -71,7 +71,7 @@ $git push origin master
 (unstaged 상태의 파일을 수정했을 때 수정하지 않은 원래의 상태로 되돌릴 때)
 $git checkout <파일명>
 
-* 파일 상태를 unstaged로 변경하기
+* staged 된 파일 상태를 unstaged로 변경하기
 $git reset HEAD <파일명>
 
 * untracked 파일 모두 지우기
@@ -179,6 +179,7 @@ $git reset --hard <커밋아이디>
 * 이전 상태로 돌아간 것 커밋 다시 커밋전 상태로 되돌리기
 (커밋한 것을 취소하고 원상태를 회복하라)
 $git revert <커밋아이디> --no-edit
+-> $git push origin develop
 
 * HEAD, index, working directory
 working directory : 작업공간. staging area에 등록되기 전의 원초적 공간이다.
