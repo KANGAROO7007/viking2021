@@ -1,3 +1,19 @@
-git revert HEAD --no-edit
-git reset --hard <커밋아이디>
-git revert <커밋아이디> --no-edit
+$git config --list
+$git config --global user.name '강인호'
+$git config --global user.email 'kih7898@partners-steel.com'
+$git config --system core.longpaths true
+$git status
+$git clone https://
+$git init
+$git remote
+$git remote add origin https://
+$cd workspace
+$git checkout develop
+$git status -s
+
+$git add m.txt
+$git commit -m 'm.txt commit'
+$git push origin develop
+$git pull origin develop
+
+
