@@ -234,3 +234,4 @@ $git rebase --edit-todo -> $git rebase --continue
 or
 $git rebase --abort
 *****************************************************************************************
+$git gui
