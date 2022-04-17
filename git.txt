@@ -71,7 +71,7 @@ $git push origin master
 (unstaged 상태의 파일을 수정했을 때 수정하지 않은 원래의 상태로 되돌릴 때)
 $git checkout <파일명>
 
-* 파일 상태를 unstaged로 변경하기
+* staged 된 파일 상태를 unstaged로 변경하기
 $git reset HEAD <파일명>
 
 * untracked 파일 모두 지우기
@@ -179,6 +179,7 @@ $git reset --hard <커밋아이디>
 * 이전 상태로 돌아간 것 커밋 다시 커밋전 상태로 되돌리기
 (커밋한 것을 취소하고 원상태를 회복하라)
 $git revert <커밋아이디> --no-edit
+-> $git push origin develop
 
 * HEAD, index, working directory
 working directory : 작업공간. staging area에 등록되기 전의 원초적 공간이다.
@@ -193,14 +194,44 @@ HEAD : 마지막 커밋을 가리킨다.
 $git reset HEAD^
 
 1.2.원하는 시점으로 워킹 디렉토리를 되돌린다.
-$git reflog 또는 $git log -g (브랜치와 HEAD가 가리켰던 커밋 목록 확인)
+$git reflog 또는 $git log -g
 $git reset HEAD@{number} 또는 $git reset <커밋아이디>
 
-2.되돌려진 상태에서 다시 commit을 한다.
-$git commit -m "write commit message"
+#2.되돌려진 상태에서 다시 commit을 한다.
+#$git commit -m "write commit message"
 
 3.원격저장소에 강제로 push 한다.
-$git push origin <브랜치명> -f
+$git push <원격저장소> <브랜치명> -f
 or
-$git push origin +<브랜치명>
+$git push <원격저장소> +<브랜치명>
 
+*comment 수정하기*********************************************************************
+커멘트를 수정하기 전에 먼저 git stash 명령을 실행하여 스테이지에 있는 내용과 
+아직 스테이지에 들어가지 않은 변경사항을 임시로 저장했다가, 작업을 모두
+마친 후에 git stash pop 명령을 실행하여 임시로 저장한 내용을 모두 가져온다.
+$git stash
+$git stash pop
+
+1.$git rebase -i HEAD~3
+(현재 작업중인 브랜치의 가장 최근 commit 3개를 보여준다)
+
+2.vi edit 창에서 수정하고 싶은 커밋 옆의 pick 이라는 문구를 reword로 바꿔준다.
+(reward가 아니라 reword 이다.)
+
+3.esc -> :wq 를 통해 커밋 리스트 저장을 해주면, 커밋을 수정할 수 있는 창이 나온다.
+(:wq!로 강제로 저장하고 종료하는 것이 아니라 :wq로 저장하고 종료한다.)
+
+4.원하는대로 커밋 내용을 수정하고 :wq를 통해 저장한다.
+
+5.수정이 잘 되었는지 git log를 통해 확인한다.
+
+6이미 커밋을 push 해서 remote에 올린 상황일 때
+force를 통해서 강제로 push 해주어야 한다.
+$git push --force <브렌치명>
+
+*rebase 한 것 수정하기 혹은 취소하기
+$git rebase --edit-todo -> $git rebase --continue
+or
+$git rebase --abort
+*****************************************************************************************
+$git gui

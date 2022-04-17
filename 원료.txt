@@ -4,3 +4,5 @@
 C, Si, Mn, P, S, Cu, Sn
 슬라그 성분비율
 SiO2, Al2O3, T/Fe, CaO, MgO, P2O5, S, 염기도
+
+생석회 라임 경소
