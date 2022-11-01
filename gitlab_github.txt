@@ -17,4 +17,7 @@ full name :
 email :
 kangaroo7007@gmail.com
 path & username
+
 https://gitlab.com/kangaroo7007
+아이디:kangaroo7007 
+복구이메일: 구글
